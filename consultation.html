@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation | Riyadh Interior Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="brand">
+            <svg class="logo" width="52" height="52" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="Riyadh Interior Studio Logo">
+                <rect x="4" y="4" width="52" height="52" rx="10" fill="#1E293B" stroke="#C59B27" stroke-width="3"/>
+                <polygon points="30,13 46,27 42,27 42,46 18,46 18,27 14,27" fill="none" stroke="#C59B27" stroke-width="2.5"/>
+                <polygon points="30,22 36,30 30,38 24,30" fill="#C59B27"/>
+            </svg>
+            <div class="brand-text">
+                <h1 class="org-name">Riyadh Interior Studio</h1>
+                <p class="tagline">Modern Najdi Heritage &amp; Contemporary Luxury</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+            <li><a href="packages.html">Packages &amp; Prices</a></li>
+            <li><a href="consultation.html" class="active">Consultation</a></li>
+            <li><a href="contact.html">Location &amp; Media</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+  <h2>Request a Free Consultation</h2>
+  <p>Tell us about your space and our designers in Riyadh will contact you within two working days.</p>
+
+  <form id="myForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email">
+
+    <label for="phone">Mobile Number</label>
+    <input type="text" id="phone">
+
+    <label for="service">Service</label>
+    <select id="service">
+      <option value="">Select</option>
+      <option>Home Design</option>
+      <option>Office Design</option>
+      <option>Shop Design</option>
+    </select>
+
+    <label for="date">Date</label>
+    <input type="date" id="date">
+
+    <label for="details">Details</label>
+    <textarea id="details" rows="4"></textarea>
+
+    <p id="error"></p>
+    <button type="submit">Send</button>
+  </form>
+
+  <div id="thanks" style="display:none;">
+    <h2 id="thanksTitle"></h2>
+    <p>We will contact you within two working days.</p>
+  </div>
+
+  <p style="text-align:right;">
+    <a href="mailto:info@riyadhinteriorstudio.com">info@riyadhinteriorstudio.com</a>
+  </p>
+</main>
+
+<footer>
+    <p>&copy; 2026 Riyadh Interior Studio | Designed by Vision Web Studio, Riyadh</p>
+    <p>Email: <a href="mailto:info@riyadhinteriorstudio.sa">info@riyadhinteriorstudio.sa</a></p>
+</footer>
+
+<script src="form.js"></script>
+</body>
+</html>
